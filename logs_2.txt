@@ -1,0 +1,8 @@
+Model Parameters
+        d_model=384,
+        num_layers=4,
+        num_heads=6,
+        num_classes=200,
+        patch_size=8
+
+        lr=1e-4
