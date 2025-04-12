@@ -101,9 +101,19 @@ class TransformerLayer(nn.Module):
         self.attn_dropout = nn.Dropout(dropout)
         self.dropout_ffn = nn.Dropout(dropout)
 
+        '''
+        Write a method to initialize some kind of attention masking
+        '''
+
+
     def forward(self, x):
         # Pre-norm
         x_norm = self.norm1(x)
+
+
+        '''
+        Split the input chanels into different size groups. Pass different inputs to conv and attention operations.
+        '''
 
         #PyTorch's MultiheadAttention
         attn_output, _ = self.self_attn(
@@ -112,6 +122,10 @@ class TransformerLayer(nn.Module):
             value=x_norm,  # (B, seq_len, D)
             need_weights=False 
         )
+
+        '''
+        Recombine inputs from conv and attention.
+        '''
 
         # Residual connection
         x = x + self.dropout1(attn_output)
@@ -125,6 +139,11 @@ class TransformerLayer(nn.Module):
 class PatchEmbedding(nn.Module):
     def __init__(self, patch_size, embed_dim, in_channels=3):
         super().__init__()
+
+        '''
+        Instead of a single conv, we do multiple layers of early convolutions.
+        '''
+
         #a conv is an easy way to get a linear projection of image patches
         #you could do the same by rearanging a tensor of image sections and then using an nn.linear layer
         #I think they are mathematically equivalent
