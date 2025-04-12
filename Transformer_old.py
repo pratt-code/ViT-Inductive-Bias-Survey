@@ -80,13 +80,17 @@ class TransformerLayer(nn.Module):
         self.attn_dim = d_model
         self.num_heads = num_heads
 
-        # Official MultiheadAttention (batch_first=True for (B, seq_len, D))
-        self.self_attn = nn.MultiheadAttention(
-            embed_dim=d_model,
-            num_heads=num_heads,
-            dropout=dropout,
-            batch_first=True  # (B, seq_len, D) instead of (seq_len, B, D)
-        )
+        # Attention parameters
+        self.W_q = nn.Linear(self.attn_dim, self.attn_dim)
+        self.W_k = nn.Linear(self.attn_dim, self.attn_dim)
+        self.W_v = nn.Linear(self.attn_dim, self.attn_dim)
+        self.W_o = nn.Linear(d_model, d_model)
+
+        #xavier init is best for attention weights I think
+        nn.init.xavier_uniform_(self.W_q.weight)
+        nn.init.xavier_uniform_(self.W_k.weight)
+        nn.init.xavier_uniform_(self.W_v.weight)
+        nn.init.xavier_uniform_(self.W_o.weight)
 
         # Normalization
         self.norm1 = nn.LayerNorm(d_model, eps=1e-06)
@@ -102,26 +106,40 @@ class TransformerLayer(nn.Module):
         self.dropout_ffn = nn.Dropout(dropout)
 
     def forward(self, x):
-        # Pre-norm
+        B, num_patches, D = x.shape
+
+        #pre-norm
         x_norm = self.norm1(x)
 
-        #PyTorch's MultiheadAttention
-        attn_output, _ = self.self_attn(
-            query=x_norm,  # (B, seq_len, D)
-            key=x_norm,    # (B, seq_len, D)
-            value=x_norm,  # (B, seq_len, D)
-            need_weights=False 
-        )
+        # Multi-head attention
+        Q = self.split_heads(self.W_q(x_norm))
+        K = self.split_heads(self.W_k(x_norm))
+        V = self.split_heads(self.W_v(x_norm))
+        attn_out = self.scaled_dot_product_attention(Q, K, V)
+        attn_out = self.combine_heads(attn_out)
+        attn_out = self.W_o(attn_out)
 
-        # Residual connection
-        x = x + self.dropout1(attn_output)
-
-        # Feed-forward
-        ff_input = self.norm2(x)
+        x = x + self.dropout1(attn_out)
+        ff_input = self.norm2(x)  # Apply norm to residual output
         x = x + self.dropout2(self.fc2(self.dropout_ffn(F.gelu(self.fc1(ff_input)))))
 
         return x
     
+    def split_heads(self, x):
+        B, P, D = x.size()
+        return x.view(B, P, self.num_heads, self.d_k).permute(0, 2, 1, 3)
+    
+    def combine_heads(self, x):
+        B, H, P, d_k = x.size()
+        return x.permute(0, 2, 1, 3).reshape(B, P, -1)
+    
+    def scaled_dot_product_attention(self, Q, K, V):
+        attn_scores = torch.matmul(Q, K.transpose(-2, -1)) / (self.d_k ** -0.5)
+        attn_probs = self.attn_dropout(torch.softmax(attn_scores, dim=-1))
+        return torch.matmul(attn_probs, V)
+
+
+
 class PatchEmbedding(nn.Module):
     def __init__(self, patch_size, embed_dim, in_channels=3):
         super().__init__()
