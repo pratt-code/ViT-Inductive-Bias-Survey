@@ -1,0 +1,236 @@
+Starting training...
+Epoch 1/100, Loss: 5.1743, Accuracy: 2.08%
+Epoch [1], Param group 0 learning rate = 0.000033
+Epoch 2/100, Loss: 4.5933, Accuracy: 7.20%
+Epoch [2], Param group 0 learning rate = 0.000062
+Epoch 3/100, Loss: 4.0978, Accuracy: 13.00%
+Epoch [3], Param group 0 learning rate = 0.000092
+Epoch 4/100, Loss: 3.7792, Accuracy: 17.25%
+Epoch [4], Param group 0 learning rate = 0.000122
+Epoch 5/100, Loss: 3.5682, Accuracy: 20.41%
+Validation Loss: 3.5724, Accuracy: 20.81%                                                                                                                                                                                                     
+New best accuracy: 20.81% - Saving model
+Epoch [5], Param group 0 learning rate = 0.000152
+Epoch 6/100, Loss: 3.3899, Accuracy: 23.62%
+Epoch [6], Param group 0 learning rate = 0.000181
+Epoch 7/100, Loss: 3.2432, Accuracy: 26.12%
+Epoch [7], Param group 0 learning rate = 0.000211
+Epoch 8/100, Loss: 3.1065, Accuracy: 28.46%
+Epoch [8], Param group 0 learning rate = 0.000241
+Epoch 9/100, Loss: 2.9839, Accuracy: 30.57%
+Epoch [9], Param group 0 learning rate = 0.000270
+c:\Users\micha\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\optim\lr_scheduler.py:243: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+Epoch 10/100, Loss: 2.8691, Accuracy: 32.75%
+Validation Loss: 3.0161, Accuracy: 31.06%                                                                                                                                                                                                     
+New best accuracy: 31.06% - Saving model
+Epoch [10], Param group 0 learning rate = 0.000300
+Epoch 11/100, Loss: 2.7470, Accuracy: 34.78%
+Epoch [11], Param group 0 learning rate = 0.000300
+Epoch 12/100, Loss: 2.5973, Accuracy: 37.84%
+Epoch [12], Param group 0 learning rate = 0.000300
+Epoch 13/100, Loss: 2.4637, Accuracy: 40.47%
+Epoch [13], Param group 0 learning rate = 0.000299
+Epoch 14/100, Loss: 2.3396, Accuracy: 42.85%
+Epoch [14], Param group 0 learning rate = 0.000299
+Epoch 15/100, Loss: 2.2073, Accuracy: 45.42%
+Validation Loss: 2.7590, Accuracy: 36.86%                                                                                                                                                                                                     
+New best accuracy: 36.86% - Saving model
+Epoch [15], Param group 0 learning rate = 0.000298
+Epoch 16/100, Loss: 2.0838, Accuracy: 48.00%
+Epoch [16], Param group 0 learning rate = 0.000297
+Epoch 17/100, Loss: 1.9684, Accuracy: 50.23%
+Epoch [17], Param group 0 learning rate = 0.000296
+Epoch 18/100, Loss: 1.8418, Accuracy: 52.91%
+Epoch [18], Param group 0 learning rate = 0.000294
+Epoch 19/100, Loss: 1.7303, Accuracy: 55.29%
+Epoch [19], Param group 0 learning rate = 0.000293
+Epoch 20/100, Loss: 1.6106, Accuracy: 58.02%
+Validation Loss: 2.8640, Accuracy: 37.90%                                                                                                                                                                                                     
+New best accuracy: 37.90% - Saving model
+Epoch [20], Param group 0 learning rate = 0.000291
+Epoch 21/100, Loss: 1.5021, Accuracy: 60.27%
+Epoch [21], Param group 0 learning rate = 0.000289
+Epoch 22/100, Loss: 1.3906, Accuracy: 62.66%
+Epoch [22], Param group 0 learning rate = 0.000287
+Epoch 23/100, Loss: 1.2835, Accuracy: 65.07%
+Epoch [23], Param group 0 learning rate = 0.000285
+Epoch 24/100, Loss: 1.1748, Accuracy: 67.84%
+Epoch [24], Param group 0 learning rate = 0.000283
+Epoch 25/100, Loss: 1.0875, Accuracy: 69.90%
+Validation Loss: 3.0329, Accuracy: 39.30%                                                                                                                                                                                                     
+New best accuracy: 39.30% - Saving model
+Epoch [25], Param group 0 learning rate = 0.000280
+Epoch 26/100, Loss: 1.0051, Accuracy: 71.79%
+Epoch [26], Param group 0 learning rate = 0.000277
+Epoch 27/100, Loss: 0.9172, Accuracy: 74.27%
+Epoch [27], Param group 0 learning rate = 0.000274
+Epoch 28/100, Loss: 0.8464, Accuracy: 76.01%
+Epoch [28], Param group 0 learning rate = 0.000271
+Epoch 29/100, Loss: 0.7834, Accuracy: 77.58%
+Epoch [29], Param group 0 learning rate = 0.000268
+Epoch 30/100, Loss: 0.7191, Accuracy: 79.17%
+Validation Loss: 3.4203, Accuracy: 38.47%                                                                                                                                                                                                     
+Epoch [30], Param group 0 learning rate = 0.000265
+Epoch 31/100, Loss: 0.6682, Accuracy: 80.62%
+Epoch [31], Param group 0 learning rate = 0.000262
+Epoch 32/100, Loss: 0.6119, Accuracy: 82.21%
+Epoch [32], Param group 0 learning rate = 0.000258
+Epoch 33/100, Loss: 0.5818, Accuracy: 82.84%
+Epoch [33], Param group 0 learning rate = 0.000254
+Epoch 34/100, Loss: 0.5355, Accuracy: 84.28%
+Epoch [34], Param group 0 learning rate = 0.000251
+Epoch 35/100, Loss: 0.4999, Accuracy: 85.28%
+Validation Loss: 3.6440, Accuracy: 37.74%
+Epoch [35], Param group 0 learning rate = 0.000247
+Epoch 36/100, Loss: 0.4672, Accuracy: 86.29%
+Epoch [36], Param group 0 learning rate = 0.000243
+Epoch 37/100, Loss: 0.4441, Accuracy: 86.80%
+Epoch [37], Param group 0 learning rate = 0.000238
+Epoch 38/100, Loss: 0.4187, Accuracy: 87.55%
+Epoch [38], Param group 0 learning rate = 0.000234
+Epoch 39/100, Loss: 0.3849, Accuracy: 88.61%
+Epoch [39], Param group 0 learning rate = 0.000230
+Epoch 40/100, Loss: 0.3632, Accuracy: 89.15%
+Validation Loss: 3.9016, Accuracy: 37.95%                                                                                                                                                                                                     
+Epoch [40], Param group 0 learning rate = 0.000225
+Epoch 41/100, Loss: 0.3523, Accuracy: 89.54%
+Epoch [41], Param group 0 learning rate = 0.000221
+Epoch 42/100, Loss: 0.3248, Accuracy: 90.42%
+Epoch [42], Param group 0 learning rate = 0.000216
+Epoch 43/100, Loss: 0.3099, Accuracy: 90.80%
+Epoch [43], Param group 0 learning rate = 0.000211
+Epoch 44/100, Loss: 0.2954, Accuracy: 91.14%
+Epoch [44], Param group 0 learning rate = 0.000207
+Epoch 45/100, Loss: 0.2768, Accuracy: 91.73%
+Validation Loss: 4.0265, Accuracy: 38.60%                                                                                                                                                                                                     
+Epoch [45], Param group 0 learning rate = 0.000202
+Epoch 46/100, Loss: 0.2633, Accuracy: 92.10%
+Epoch [46], Param group 0 learning rate = 0.000197
+Epoch 47/100, Loss: 0.2538, Accuracy: 92.49%
+Epoch [47], Param group 0 learning rate = 0.000192
+Epoch 48/100, Loss: 0.2393, Accuracy: 92.81%
+Epoch [48], Param group 0 learning rate = 0.000187
+Epoch 49/100, Loss: 0.2264, Accuracy: 93.25%
+Epoch [49], Param group 0 learning rate = 0.000182
+Epoch 50/100, Loss: 0.2095, Accuracy: 93.68%
+Validation Loss: 4.1084, Accuracy: 38.99%                                                                                                                                                                                                     
+Epoch [50], Param group 0 learning rate = 0.000176
+Epoch 51/100, Loss: 0.2041, Accuracy: 93.83%
+Epoch [51], Param group 0 learning rate = 0.000171
+Epoch 52/100, Loss: 0.1903, Accuracy: 94.34%
+Epoch [52], Param group 0 learning rate = 0.000166
+Epoch 53/100, Loss: 0.1846, Accuracy: 94.52%
+Epoch [53], Param group 0 learning rate = 0.000161
+Epoch 54/100, Loss: 0.1719, Accuracy: 94.87%
+Epoch [54], Param group 0 learning rate = 0.000156
+Epoch 55/100, Loss: 0.1631, Accuracy: 95.12%
+Validation Loss: 4.1991, Accuracy: 38.86%                                                                                                                                                                                                     
+Epoch [55], Param group 0 learning rate = 0.000151
+Epoch 56/100, Loss: 0.1576, Accuracy: 95.28%
+Epoch [56], Param group 0 learning rate = 0.000145
+Epoch 57/100, Loss: 0.1448, Accuracy: 95.69%
+Epoch [57], Param group 0 learning rate = 0.000140
+Epoch 58/100, Loss: 0.1388, Accuracy: 95.89%
+Epoch [58], Param group 0 learning rate = 0.000135
+Epoch 59/100, Loss: 0.1307, Accuracy: 96.10%
+Epoch [59], Param group 0 learning rate = 0.000130
+Epoch 60/100, Loss: 0.1284, Accuracy: 96.22%
+Validation Loss: 4.2868, Accuracy: 39.32%                                                                                                                                                                                                     
+New best accuracy: 39.32% - Saving model
+Epoch [60], Param group 0 learning rate = 0.000125
+Epoch 61/100, Loss: 0.1240, Accuracy: 96.30%
+Epoch [61], Param group 0 learning rate = 0.000119
+Epoch 62/100, Loss: 0.1140, Accuracy: 96.63%
+Epoch [62], Param group 0 learning rate = 0.000114
+Epoch 63/100, Loss: 0.1091, Accuracy: 96.79%
+Epoch [63], Param group 0 learning rate = 0.000109
+Epoch 64/100, Loss: 0.1006, Accuracy: 97.08%
+Epoch [64], Param group 0 learning rate = 0.000104
+Epoch 65/100, Loss: 0.0941, Accuracy: 97.36%
+Validation Loss: 4.3347, Accuracy: 39.68%                                                                                                                                                                                                     
+New best accuracy: 39.68% - Saving model
+Epoch [65], Param group 0 learning rate = 0.000099
+Epoch 66/100, Loss: 0.0918, Accuracy: 97.27%
+Epoch [66], Param group 0 learning rate = 0.000094
+Epoch 67/100, Loss: 0.0866, Accuracy: 97.50%
+Epoch [67], Param group 0 learning rate = 0.000090
+Epoch 68/100, Loss: 0.0826, Accuracy: 97.66%
+Epoch [68], Param group 0 learning rate = 0.000085
+Epoch 69/100, Loss: 0.0778, Accuracy: 97.77%
+Epoch [69], Param group 0 learning rate = 0.000080
+Epoch 70/100, Loss: 0.0741, Accuracy: 97.88%
+Validation Loss: 4.3719, Accuracy: 39.84%                                                                                                                                                                                                     
+New best accuracy: 39.84% - Saving model
+Epoch [70], Param group 0 learning rate = 0.000076
+Epoch 71/100, Loss: 0.0690, Accuracy: 98.03%
+Epoch [71], Param group 0 learning rate = 0.000071
+Epoch 72/100, Loss: 0.0683, Accuracy: 97.99%
+Epoch [72], Param group 0 learning rate = 0.000067
+Epoch 73/100, Loss: 0.0634, Accuracy: 98.18%
+Epoch [73], Param group 0 learning rate = 0.000063
+Epoch 74/100, Loss: 0.0591, Accuracy: 98.35%
+Epoch [74], Param group 0 learning rate = 0.000058
+Epoch 75/100, Loss: 0.0563, Accuracy: 98.38%
+Validation Loss: 4.3595, Accuracy: 40.50%                                                                                                                                                                                                     
+New best accuracy: 40.50% - Saving model
+Epoch [75], Param group 0 learning rate = 0.000054
+Epoch 76/100, Loss: 0.0528, Accuracy: 98.53%
+Epoch [76], Param group 0 learning rate = 0.000050
+Epoch 77/100, Loss: 0.0492, Accuracy: 98.62%
+Epoch [77], Param group 0 learning rate = 0.000047
+Epoch 78/100, Loss: 0.0464, Accuracy: 98.73%
+Epoch [78], Param group 0 learning rate = 0.000043
+Epoch 79/100, Loss: 0.0446, Accuracy: 98.74%
+Epoch [79], Param group 0 learning rate = 0.000039
+Epoch 80/100, Loss: 0.0448, Accuracy: 98.73%
+Validation Loss: 4.3751, Accuracy: 40.52%                                                                                                                                                                                                     
+New best accuracy: 40.52% - Saving model
+Epoch [80], Param group 0 learning rate = 0.000036
+Epoch 81/100, Loss: 0.0413, Accuracy: 98.84%
+Epoch [81], Param group 0 learning rate = 0.000033
+Epoch 82/100, Loss: 0.0383, Accuracy: 98.92%
+Epoch [82], Param group 0 learning rate = 0.000030
+Epoch 83/100, Loss: 0.0392, Accuracy: 98.90%
+Epoch [83], Param group 0 learning rate = 0.000027
+Epoch 84/100, Loss: 0.0362, Accuracy: 99.00%
+Epoch [84], Param group 0 learning rate = 0.000024
+Epoch 85/100, Loss: 0.0346, Accuracy: 99.03%
+Validation Loss: 4.3755, Accuracy: 41.02%                                                                                                                                                                                                     
+New best accuracy: 41.02% - Saving model
+Epoch [85], Param group 0 learning rate = 0.000021
+Epoch 86/100, Loss: 0.0345, Accuracy: 99.04%
+Epoch [86], Param group 0 learning rate = 0.000018
+Epoch 87/100, Loss: 0.0317, Accuracy: 99.13%
+Epoch [87], Param group 0 learning rate = 0.000016
+Epoch 88/100, Loss: 0.0312, Accuracy: 99.17%
+Epoch [88], Param group 0 learning rate = 0.000014
+Epoch 89/100, Loss: 0.0309, Accuracy: 99.14%
+Epoch [89], Param group 0 learning rate = 0.000012
+Epoch 90/100, Loss: 0.0289, Accuracy: 99.23%
+Validation Loss: 4.3810, Accuracy: 40.93%                                                                                                                                                                                                     
+Epoch [90], Param group 0 learning rate = 0.000010
+Epoch 91/100, Loss: 0.0274, Accuracy: 99.25%
+Epoch [91], Param group 0 learning rate = 0.000008
+Epoch 92/100, Loss: 0.0272, Accuracy: 99.28%
+Epoch [92], Param group 0 learning rate = 0.000007
+Epoch 93/100, Loss: 0.0267, Accuracy: 99.28%
+Epoch [93], Param group 0 learning rate = 0.000005
+Epoch 94/100, Loss: 0.0268, Accuracy: 99.27%
+Epoch [94], Param group 0 learning rate = 0.000004
+Epoch 95/100, Loss: 0.0258, Accuracy: 99.29%
+Validation Loss: 4.3662, Accuracy: 41.39%                                                                                                                                                                                                     
+New best accuracy: 41.39% - Saving model
+Epoch [95], Param group 0 learning rate = 0.000003
+Epoch 96/100, Loss: 0.0268, Accuracy: 99.25%
+Epoch [96], Param group 0 learning rate = 0.000002
+Epoch 97/100, Loss: 0.0266, Accuracy: 99.29%
+Epoch [97], Param group 0 learning rate = 0.000002
+Epoch 98/100, Loss: 0.0249, Accuracy: 99.33%
+Epoch [98], Param group 0 learning rate = 0.000001
+Epoch 99/100, Loss: 0.0244, Accuracy: 99.34%
+Epoch [99], Param group 0 learning rate = 0.000001
+Epoch 100/100, Loss: 0.0252, Accuracy: 99.33%
+Validation Loss: 4.3453, Accuracy: 41.11%                                                                                                                                                                                                     
+Epoch [100], Param group 0 learning rate = 0.000001
+Training complete!
