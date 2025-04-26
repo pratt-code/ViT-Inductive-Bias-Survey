@@ -44,9 +44,13 @@ to be implemented
 ```
 
 ### 4. Training a ViT with channelwise splits
-Run the following command:
+Run the following command to run inference using our best saved model 'best_chanel_split_vit_model.pth':
 ```bash
-to be implemented
+python channel_split_inference.py
+```
+Run the following command to run training:
+```bash
+python vit_channel_split_train.py
 ```
 
 
