@@ -26,11 +26,11 @@ python vit_off.py
 ### 2. Run/Train a ViT with Hierarchical Locality Enforced Attention-Masking
 Run the following command to run inference:
 ```bash
-python vit_window_train.py
+python window_inference.py
 ```
 Run the following command to run training:
 ```bash
-python window_inference.py
+python vit_window_train.py
 ```
 
 Note:
