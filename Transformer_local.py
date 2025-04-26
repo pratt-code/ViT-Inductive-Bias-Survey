@@ -57,8 +57,8 @@ class ViT(nn.Module):
                 num_heads=num_heads,
                 num_patches=self.num_patches,
                 layer_index=i,
-                #local_window = set_layer(i)  # (4x4 patch region)
-                local_window=None  # (4x4 patch region)
+                local_window = set_layer(i)  # (4x4 patch region)
+                #local_window=None  # (4x4 patch region)
             ) for i in range(num_layers)
         ])
 
