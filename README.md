@@ -23,10 +23,14 @@ Run the following command:
 python vit_off.py
 ```
 
-### 2. Train a Base ViT
-Run the following command:
+### 2. Run/Train a ViT with Hierarchical Locality Enforced Attention-Masking
+Run the following command to run inference:
 ```bash
 python vit_window_train.py
+```
+Run the following command to run training:
+```bash
+python window_inference.py
 ```
 
 Note:
