@@ -33,7 +33,7 @@ Note:
 This script is set up to train a model with 6 transformer layers, which was the best-performing setup.
 If you want to adjust to a different number of layers (other than 6 or 8), you may need to modify Transformer_local.py accordingly.
 
-### 3. Training a ViT with early onvolutions
+### 3. Training a ViT with early convolutions
 Run the following command:
 ```bash
 to be implemented
