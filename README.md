@@ -24,7 +24,7 @@ python vit_off.py
 ```
 
 ### 2. Run/Train a ViT with Hierarchical Locality Enforced Attention-Masking
-Run the following command to run inference:
+Run the following command to run inference using our best saved model 'best_local_vit_model.pth':
 ```bash
 python window_inference.py
 ```
