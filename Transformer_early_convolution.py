@@ -147,8 +147,8 @@ class PatchEmbedding(nn.Module):
         #a conv is an easy way to get a linear projection of image patches
         #you could do the same by rearanging a tensor of image sections and then using an nn.linear layer
         #I think they are mathematically equivalent
-        self.conv1 = nn.Conv2d(in_channels, 64, kernel_size=3, stride=1, padding=1)
-        self.conv2 = nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1)
+        self.conv1 = nn.Conv2d(in_channels, 128, kernel_size=3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)
         self.conv3 = nn.Conv2d(128, embed_dim, kernel_size=patch_size, stride=patch_size)
         self.relu = nn.ReLU(inplace=True)
 
