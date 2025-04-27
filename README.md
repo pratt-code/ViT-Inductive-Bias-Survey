@@ -38,13 +38,17 @@ This script is set up to train a model with 6 transformer layers, which was the 
 If you want to adjust to a different number of layers (other than 6 or 8), you may need to modify Transformer_local.py accordingly.
 
 ### 3. Training a ViT with early convolutions
-Run the following command:
+Run the following command to run inference using our best saved model 'best_early_convolution_vit_model.pth':
 ```bash
-to be implemented
+python early_convolution_inference.py
+```
+Run the following command to run training:
+```bash
+python vit_early_convolution_train.py
 ```
 
 ### 4. Training a ViT with channelwise splits
-Run the following command to run inference using our best saved model 'best_chanel_split_vit_model.pth':
+Run the following command to run inference using our best saved model 'best_channel_split_vit_model.pth':
 ```bash
 python channel_split_inference.py
 ```
